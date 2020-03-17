@@ -1,1 +1,1 @@
-alert tcp $EXTERNAL_NET any -> any 1080 (msg:"TEST ALERT"; content:"hostip"; classtyoe:web-applicantion-attack; sid:1010; rev:0;)
+alert tcp $EXTERNAL_NET any -> any 1080 (msg:"TEST ALERT"; flags:U; content:"hostip"; offset:10; depth:10; nocase; classtype:web-applicantion-attack; sid:101010; rev:0;)
